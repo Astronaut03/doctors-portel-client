@@ -11,7 +11,7 @@ const Sidebar = () => {
     const [isDoctor, setIsDoctor] = useState(false);
 
     useEffect(() => {
-        fetch('https://salty-plateau-71286.herokuapp.com/isDoctor', {
+        fetch('http://localhost:5000/isDoctor', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({ email: loggedInUser.email })
@@ -28,6 +28,7 @@ const Sidebar = () => {
                         <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span>
                     </Link>
                 </li>
+               
                 <li>
                     <Link to="/" className="text-white">
                         <FontAwesomeIcon icon={faHome} /> <span>Home</span>
@@ -35,14 +36,15 @@ const Sidebar = () => {
                 </li>
                 {isDoctor && 
                 <div>
-                    <li>
-                        <Link to="/allPatients" className="text-white">
-                            <FontAwesomeIcon icon={faCalendar} /> <span>Appointments</span>
-                        </Link>
-                    </li>
+                   
                     <li>
                         <Link to="/patient" className="text-white">
                             <FontAwesomeIcon icon={faUsers} /> <span>Patients</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/allPatients" className="text-white">
+                            <FontAwesomeIcon icon={faCalendar} /> <span>Appointments</span>
                         </Link>
                     </li>
                     <li>

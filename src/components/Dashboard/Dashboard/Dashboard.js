@@ -25,6 +25,7 @@ const Dashboard = () => {
 
     useEffect( () =>{
         fetch('http://localhost:5000/appointmentByDate', {
+            // localhost server a 5000 k call korteche data neoyar jonno// 
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({date: selectedDate, email: loggedInUser.email})
