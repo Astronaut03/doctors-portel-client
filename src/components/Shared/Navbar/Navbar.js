@@ -15,19 +15,19 @@ const Navbar = () => {
                         <Link  style={{color:'#1CC7C1'}} className="nav-link mr-5" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link style={{color:'#1CC7C1'}} className="nav-link mr-5" to="/login">About</Link>
+                        <Link style={{color:'#1CC7C1'}} className="nav-link mr-5" to="/patient/appointments">Patient</Link>
                     </li>
                     <li className="nav-item">
-                        <Link style={{color:'#1CC7C1'}} className="nav-link mr-5" to="blogs">Dental Services</Link>
+                        <Link style={{color:'#1CC7C1'}} className="nav-link mr-5" to="dashboard">Dashboard</Link>
                     </li>
                     <li className="nav-item">
-                        <Link style={{color:'#1CC7C1'}} className="nav-link mr-5" to="/login">Reviews</Link>
+                        <Link style={{color:'#1CC7C1'}} className="nav-link mr-5" to="blog">Blog</Link>
                     </li>
                     <li className="nav-item">
-                        <Link style={{color:'#1CC7C1'}} className="nav-link mr-5" to="#">Blogs</Link>
+                        <Link style={{color:'#1CC7C1'}} className="nav-link mr-5" to="contact">Contact Us</Link>
                     </li>
                     <li className="nav-item">
-                        <Link style={{color:'#1CC7C1'}} className="nav-link mr-5" to="#">Contact Us</Link>
+                        <Link style={{color:'#1CC7C1'}} className="nav-link mr-5" to="login">Login</Link>
                     </li>
                 </ul>
             </div>
