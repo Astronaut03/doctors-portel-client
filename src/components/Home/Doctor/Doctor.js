@@ -10,7 +10,7 @@ const Doctor = ({doctor}) => {
             {
                 doctor.image ? <img style={{height: '200px'}} src={`data:image/png;base64,${doctor.image.img}`}/>
                 :
-                <img className="img-fluid mb-3" src={img} alt=""/>
+                <img style={{height: '200px'}} className="img-fluid mb-3" src={`https://radiant-gorge-89561.herokuapp.com/${doctor.img}`} alt=""/>
             }
             <h4>{doctor.name}</h4>
             <h6>{doctor.email}</h6>
