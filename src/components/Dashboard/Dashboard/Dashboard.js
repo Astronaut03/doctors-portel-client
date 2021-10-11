@@ -24,7 +24,7 @@ const Dashboard = () => {
     }
 
     useEffect( () =>{
-        fetch('http://localhost:5000/appointmentByDate', {
+        fetch('https://radiant-gorge-89561.herokuapp.com/appointmentByDate', {
             // localhost server a 5000 k call korteche data neoyar jonno// 
             method: 'POST',
             headers: { 'content-type': 'application/json' },
